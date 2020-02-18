@@ -19,7 +19,6 @@ public class PaymentWalletTest {
 	{
 		PaymentWalletService ser=new PaymentWalletServiceImp();
 		assertEquals(true, ser.transferFund("12345841545", "12245841565", 1000));
-		
 	}
 	@DisplayName("Wrong toAccId")
 	@Test
@@ -57,6 +56,7 @@ public class PaymentWalletTest {
 				()->ser.transferFund("12345841545", "12345841545", 2500));
 		
 	}
+	
 	
 	
 
